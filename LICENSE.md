@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2017 Gian Luca Da Silva Figueiredo, Thaís Mariane Santos da Silva
+Copyright (c) 2017 Thaís Mariane Santos da Silva, Gian Luca Da Silva Figueiredo
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
