@@ -3,8 +3,8 @@
 
 body, html{
     height: 100%;
-    margin: 0;
 }
+
 /* backgrounds */
 .bg01, bg02{
     position: relative;
@@ -13,43 +13,48 @@ body, html{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 div.bg01{
     background-image: url("../_imagem/fundo1.jpg");
-    min-height: 100%;
-    padding: 0;
-    margin:0;
-    top: -3%;
+    height: 100%;
+    margin-top: -0.6%;
 }
 
 header#cabecalho {
     font-family: 'Fredericka the Great';
 }
 
-header#cabecalho h1{
+div.bg01 h1{
+    font-family: 'Fredericka the Great';
     font-weight: normal;
     font-size: 112px;
     position: relative;
-    left: 23%;
     color: #fff;
+    padding-left: 23%;
+}
+
+div.bg02 {
+    margin-top: -1.2%;
+    background-color: #eeedf2;
+    background-image: url(../_imagem/fundo2.jpg);
 }
 
 /* FORMATANDO O MENU */
 
 nav#menu{
     display: block;
+    padding: 7% 0 0 25%;
 }
 
 nav#menu ul{ 
     list-style: none;
     position: relative;
-    width: 100%;
-    left: 35%;
 }
 
 nav#menu li{
     display: inline-block;
-    font-size: 112px;
-    padding: 10% 5% 0 0;
+    font-size: 150px;
+    padding-left: 9%;
 }
 
 nav#menu h1{
@@ -71,3 +76,4 @@ nav#menu a{
 .yellow{
     color: #eece67;
 }
+
