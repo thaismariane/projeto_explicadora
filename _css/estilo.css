@@ -1,130 +1,220 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
 @import url('https://fonts.googleapis.com/css?family=Delius');
-
-body, html{
+body,
+html {
     height: 100%;
 }
 
-h1, h2{
-  font-family: 'Fredericka the Great';  
-  font-weight: normal;
+h1,
+h2 {
+    font-family: 'Fredericka the Great';
+    font-weight: normal;
 }
 
-p{
+p {
     font-family: 'Delius';
     text-align: justify;
 }
 
-.caption{
+.caption {
     position: absolute;
 }
 
+
 /* cabecalho */
+
 header#cabecalho {
     font-family: 'Fredericka the Great';
 }
 
-/* backgrounds */
-.bg01{
-    position: relative;
-    background-attachment: fixed;
-    background-position: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+/* Media Queries for mobile */
+
+@media (width: 360px) {}
+
+@media(width: 720px) {}
+
+@media(width: 840px) {}
+
+@media(width: 1280px) {
+    /* backgrounds */
+    .bg01 {
+        position: relative;
+        background-attachment: fixed;
+        background-position: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    div.bg01 {
+        background-image: url("../_imagem/fundo1.jpg");
+        height: 100%;
+        margin-top: -0.6%;
+    }
+    div.bg01 h1 {
+        font-weight: normal;
+        font-size: 112px;
+        color: #fff;
+        padding-left: 42%;
+    }
+    div.bg03 {
+        background-color: #eeedf2;
+        width: 100%;
+        margin: -2% 0 0 -0.6%;
+        padding: 0 1.2% 0 0;
+        background-attachment: scroll;
+        background-image: url(../_imagem/fundo2.jpg);
+        background-repeat: repeat-y;
+        min-height: 477px;
+    }
+    div.bg03 .img_perfil {
+        width: 500px;
+        height: 477px;
+        background-image: url(../_imagem/postit.png);
+        margin: -2.5% 0 1% 1%;
+        position: relative;
+        float: right;
+    }
+    div.bg03 .img_perfil img {
+        width: 280px;
+        height: 320px;
+        margin: 16% 0 0 22%;
+    }
+    div.bg03 h1,
+    p {
+        margin-left: 15%;
+        padding: 0;
+    }
+    div.bg03 h1 {
+        font-size: 30px;
+        text-align: center;
+        padding-top: 2%;
+    }
+    div.bg03 p {
+        font-size: 20px;
+    }
+    /* FORMATANDO O MENU */
+    nav#menu {
+        display: block;
+        padding: 7% 0 0 25%;
+    }
+    nav#menu ul {
+        list-style: none;
+        position: relative;
+    }
+    nav#menu li {
+        display: inline-block;
+        font-size: 150px;
+        padding-left: 9%;
+    }
+    nav#menu h1 {
+        display: none;
+    }
+    nav#menu a {
+        text-decoration: none;
+    }
+    .pink {
+        color: #f481a8;
+    }
+    .green {
+        color: #a3e0a7;
+    }
+    .yellow {
+        color: #eece67;
+    }
+    .red {
+        color: red;
+    }
 }
 
-div.bg01{
-    background-image: url("../_imagem/fundo1.jpg");
-    height: 100%;
-    margin-top: -0.6%;
-}
+@media(min-width: 1440px) {}
 
-div.bg01 h1{
-    font-weight: normal;
-    font-size: 112px;
-    color: #fff;
-    padding-left: 42%;
-}
-
-div.bg03 {
-    background-color: #eeedf2;
-    width: 100%;
-    margin: -2% 0 0 -0.6%;
-    padding: 0 1.2% 0 0;
-    background-attachment: scroll;
-    background-image: url(../_imagem/fundo2.jpg);
-    background-repeat: repeat-y;
-    min-height: 477px;
-}
-
-div.bg03 .img_perfil{
-    width: 500px;
-    height: 477px;
-    background-image: url(../_imagem/postit.png);
-    margin: -2.5% 0 1% 1%;
-    position: relative;
-    float: right;
-}
-
-div.bg03 .img_perfil img{
-    width: 280px;
-    height: 320px;
-    margin: 16% 0 0 22%;
-}
-
-div.bg03 h1, p{
-    margin-left: 15%;
-    padding:0;
-}
-
-div.bg03 h1{
-    font-size: 30px;
-    text-align: center;
-    padding-top: 2%;
-}
-
-div.bg03 p{
-    font-size: 20px;
-}
-/* FORMATANDO O MENU */
-
-nav#menu{
-    display: block;
-    padding: 7% 0 0 25%;
-}
-
-nav#menu ul{ 
-    list-style: none;
-    position: relative;
-}
-
-nav#menu li{
-    display: inline-block;
-    font-size: 150px;
-    padding-left: 9%;
-}
-
-nav#menu h1{
-    display: none;
-}
-
-nav#menu a{
-    text-decoration: none;
-}
-
-.pink{
-    color:#f481a8;
-}
-
-.green{
-    color: #a3e0a7;
-}
-
-.yellow{
-    color: #eece67;
-}
-
-.red{
-    color:red;
+@media(min-width: 1600px) {
+    /* backgrounds */
+    .bg01 {
+        position: relative;
+        background-attachment: fixed;
+        background-position: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    div.bg01 {
+        background-image: url("../_imagem/fundo1.jpg");
+        height: 100%;
+        margin-top: -0.6%;
+    }
+    div.bg01 h1 {
+        font-weight: normal;
+        font-size: 112px;
+        color: #fff;
+        padding-left: 72%;
+    }
+    div.bg03 {
+        background-color: #eeedf2;
+        width: 100%;
+        margin: -7% 0 0 -0.6%;
+        padding: 0 1.2% 0 0;
+        background-attachment: scroll;
+        background-image: url(../_imagem/fundo2.jpg);
+        background-repeat: repeat-y;
+        min-height: 477px;
+    }
+    div.bg03 .img_perfil {
+        width: 500px;
+        height: 477px;
+        background-image: url(../_imagem/postit.png);
+        margin: -2.5% 0 1% 1%;
+        position: relative;
+        float: right;
+    }
+    div.bg03 .img_perfil img {
+        width: 280px;
+        height: 320px;
+        margin: 16% 0 0 22%;
+    }
+    div.bg03 h1,
+    p {
+        margin-left: 15%;
+        padding: 0;
+    }
+    div.bg03 h1 {
+        font-size: 30px;
+        text-align: center;
+        padding-top: 2%;
+    }
+    div.bg03 p {
+        font-size: 20px;
+    }
+    /* FORMATANDO O MENU */
+    nav#menu {
+        display: block;
+        padding: 7% 0 0 25%;
+    }
+    nav#menu ul {
+        list-style: none;
+        position: relative;
+    }
+    nav#menu li {
+        display: inline-block;
+        font-size: 150px;
+        padding-left: 9%;
+    }
+    nav#menu h1 {
+        display: none;
+    }
+    nav#menu a {
+        text-decoration: none;
+    }
+    .pink {
+        color: #f481a8;
+    }
+    .green {
+        color: #a3e0a7;
+    }
+    .yellow {
+        color: #eece67;
+    }
+    .red {
+        color: red;
+    }
 }
